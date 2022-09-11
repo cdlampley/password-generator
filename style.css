@@ -1,0 +1,81 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 2px solid #212121;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form div{
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+.psswd-display {
+    background: #008000;
+    padding: 10px;
+    border-radius: 1rem;
+    color: #fff;
+    height: 2rem;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.new-password {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.checked-inputs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.numrange {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.numinput {
+    width: 2rem;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1rem;
+    background: transparent;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #00800033;
+}
