@@ -9,7 +9,7 @@ const btn = document.getElementById('btn')
 const updatedPassword = document.getElementById('updated-password')
 const getNewPassword = document.getElementById('refresh-button')
 
-// setup character length
+//setup character length
 range.addEventListener('input', addRangeNum)
 num.addEventListener('input', addRangeNum)
 
@@ -18,7 +18,7 @@ function addRangeNum(e) {
     range.value = value
     num.value = value
 }
-// hide refresh page button
+//hide refresh page button
 getNewPassword.hidden = true
 
 //stop form from refreshing
@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
 })
 
-// once button pressed
+//once button pressed
 const generatePassword = (length) => {
     let result = ''
     const alphaLength = alpha.length
@@ -37,8 +37,15 @@ const generatePassword = (length) => {
 }
 btn.addEventListener('click', generatePassword)
 
+//password length
+const psswdLength = () => {
+    const pLength = num.length
+    return pLength
+}
+
+//new generated password
 newAlpha = () => {
-    const changeAlpha = generatePassword(5)
+    const changeAlpha = generatePassword(8)
     updatedPassword.innerText = changeAlpha
 }
 btn.addEventListener('click', newAlpha)
